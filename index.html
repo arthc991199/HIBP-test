@@ -3,57 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprawdź, czy twoje hasło było ju uźywane</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 400px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        .result {
-            margin-top: 20px;
-            font-size: 16px;
-        }
-    </style>
+    <title>Sprawdź, czy twoje hasło było już używane</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Sprawdź, czy twoje hasło było juź uźywane</h1>
+        <h1>Sprawdź, czy twoje hasło było już używane</h1>
+
+        <!-- Informacja o prywatności danych -->
+        <p>Twoje hasło nie jest przesyłane do żadnego serwera. Wszystkie informacje są przetwarzane lokalnie w przeglądarce i nikt ich nie może zobaczyć.</p>
+        
         <form id="passwordForm">
             <input type="password" id="password" placeholder="Wprowadź swoje hasło" required>
             <button type="submit">Sprawdź</button>
         </form>
+
         <div class="result" id="result"></div>
+        <div id="suggestions"></div>
     </div>
 
+    <!-- Stopka na dole strony -->
+    <footer>
+        cyberkurs.online – <a href="https://www.linkedin.com/in/artur-markiewicz/" target="_blank">Artur Markiewicz</a> – konsultant, trener – cyberbezpieczeństwo
+        <a href="https://github.com/arthc991199/bezpiecznalista2" target="_blank">public Git</a>
+    </footer>
+
+    <script src="passwordStrength.js"></script>
+    <script src="passwordSuggestions.js"></script>
+    <script src="commonPasswords.js"></script>
+    <script src="animation.js"></script>
+    <script src="sessionStorage.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,84 @@
+/* Stylowanie całej strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Główna zawartość, aby nie nachodziła na stopkę */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    flex-grow: 1; /* Elastyczne wypełnienie */
+}
+
+/* Nagłówek */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Stylowanie pola wprowadzania hasła */
+input[type="password"] {
+    width: 100%;
+    padding: 15px; /* Zwiększenie rozmiaru pola */
+    margin: 15px 0; /* Dodanie marginesu, aby zwiększyć odstęp */
+    border: 2px solid #ccc; /* Grubsza ramka */
+    border-radius: 8px; /* Większe zaokrąglenie rogów */
+    font-size: 18px; /* Większa czcionka */
+    box-sizing: border-box; /* Zapobiega przekraczaniu szerokości kontenera */
+}
+
+/* Stylowanie przycisku */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px; /* Dodanie małego marginesu nad przyciskiem */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Wyniki */
+.result {
+    margin-top: 20px;
+    font-size: 16px;
+    transition: opacity 0.5s ease;
+}
+
+/* Stopka */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
